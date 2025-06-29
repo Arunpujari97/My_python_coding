@@ -1,4 +1,4 @@
-2#Arrays is divided into two ways static and dynamic
+#Arrays is divided into two ways static and dynamic
 #static array are only store same type data and dynamic store many type of data in the array
 #homogenious and heterogenious are different homogenious store only same type of data and
 # heterogenious store diffrent type of data
@@ -360,30 +360,30 @@
 #     return (old_hash+1) % self.size
 
 
-              
-class node:
-    def __init__(self,value):
-        self.left=None
-        self.data=value
-        self.right=None
-class Tree:
-    def creat_tree(self,data):
-        return node(data)
-    def insert_to_tree(self,Node,data):
-        if Node is None:
-            return self.creat_tree(data)
-        if data<Node.data:
-            Node.left=self.insert_to_tree(Node.left,data)
-        else:
-            Node.right=self.insert_to_tree(Node.right,data)
-        return Node
+    # Tree         
+# class node:
+#     def __init__(self,value):
+#         self.left=None
+#         self.data=value
+#         self.right=None
+# class Tree:
+#     def creat_tree(self,data):
+#         return node(data)
+#     def insert_to_tree(self,Node,data):
+#         if Node is None:
+#             return self.creat_tree(data)
+#         if data<Node.data:
+#             Node.left=self.insert_to_tree(Node.left,data)
+#         else:
+#             Node.right=self.insert_to_tree(Node.right,data)
+#         return Node
 
 
-tree=Tree()
-root=tree.creat_tree(5)
-tree.insert_to_tree(5,[2,5,2,6,7,8,4,9])
+# tree=Tree()
+# root=tree.creat_tree(5)
+# tree.insert_to_tree(5,[2,5,2,6,7,8,4,9])
 
-print(root.data)
+# print(root.data)
 
 
 
